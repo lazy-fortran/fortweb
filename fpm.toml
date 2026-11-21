@@ -1,0 +1,20 @@
+name = "fortweb"
+version = "0.1.0"
+license = "MIT"
+author = "Christopher Albert"
+description = "HTTP server and client building blocks in Fortran over POSIX sockets"
+
+# The flags of a package reach its own sources only, in every profile: the
+# request parsers keep their bounds checks in release builds of consumers.
+[build]
+auto-executables = false
+auto-tests = true
+flags = ["-fcheck=bounds"]
+
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+
+[dependencies]
+fx = { git = "https://github.com/lazy-fortran/fx.git", rev = "dccc8c5ca05e4ebccc57b0a16390f753cb4d26a2" }
