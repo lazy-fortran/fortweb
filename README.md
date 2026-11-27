@@ -1,9 +1,8 @@
 # fortweb
 
 HTTP server building blocks in Fortran over POSIX sockets, with no C sources
-and no upstream dependencies beyond the C library. [Source](https://code.tugraz.at/yard/fortweb).
-It serves [FortShell](https://github.com/lazy-fortran/fortshell) and
-[fortyard](https://code.tugraz.at/yard/fortyard). Linux only.
+and no upstream dependencies beyond the C library. [Source](https://github.com/lazy-fortran/fortweb).
+It serves [FortShell](https://github.com/lazy-fortran/fortshell). Linux only.
 
 | Module | Contents |
 | --- | --- |
